@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*config geral */
+* {
+    list-style: none;
+    text-decoration: none;
+    font-size: 62.5%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/*primeiro menu*/
+.nav1 {
+    background-color: #6773DD;
+    width: 100%;
+    height: 60px;
+
+}
+
+.nav1 li {
+    display: flex;
+    list-style: none;
+    margin: 20px;
+
+
+}
+
+
+.nav1 ul {
+    display: flex;
+    float: right;
+    display: flex;
+    right: 60px;
+    text-decoration: none;
+
+}
+
+.nav1 a {
+    text-decoration: none;
+    color: #F5EBF7;
+    font-weight: 800;
+    font-size: 1.3rem;
+
+}
+
+
+/*segundo menu*/
+.menu {
+    background-color: #111672;
+    width: 100%;
+    height: 100px;
+    text-decoration: none;
+
+}
+
+.menu ul {
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+    display: flex;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: azure;
+    padding: 1.0rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+
+}
+
+.menu li {
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+    left: 280px;
+
+
+
+
+
+}
+
+.logo {
+    position: absolute;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    left: 100px;
+}
+
+/*barra bem vindo*/
+
+.vindo {
+    background-color: #1E73BE;
+    height: 144px;
+    width: 100%;
+    color: #FEFEFF;
+    text-align: center;
+
+
+}
+
+.vindo h1 {
+    font-size: 3.7rem;
+    padding-top: 4.4rem;
+    margin-bottom: 0px;
+
+
+
+}
+
+.vindo p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/*div boleto,wi-fi,Central*/
+
+.fas {
+    font-size: 95px;
+}
+
+.container2 {
+    display: flex;
+}
+
+.principal {
+    background-color: #DBDBDB;
+    width: 100%;
+    height: 551px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+
+
+
+}
+
+.fas {
+    transform: translatey(-50%);
+    border-radius: 50%;
+    border: 15px solid #81db9e;
+}
+
+.fa-user {
+    color: #FEFEFF;
+    background-color: #6D83E8;
+
+}
+
+.fa-wifi {
+    color: #FEFEFF;
+    background-color: #6D83E8;
+}
+
+.teste {
+
+    background-color: #FFFFFF;
+    height: 411px;
+    width: 360px;
+    border-radius: 10px;
+    margin: 15px;
+    color: #6F89D9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 70px;
+
+
+
+
+}
+
+
+.teste h2 {
+    font-size: 2.8rem;
+
+
+}
+
+.teste h2,
+p {
+
+    margin-top: 50px;
+}
+
+.teste p {
+
+    font-size: 1.7rem;
+}
+
+/*botão */
+
+.botao {
+
+    background-color: #6A84D8;
+    color: #FEFEFF;
+    height: 49px;
+    width: 147.89px;
+    border-radius: 30px;
+    border: none;
+
+    cursor: pointer;
+    font-size: 1.4rem;
+
+
+}
+
+/*plano fibra*/
+.planos h1,
+.planos h3 {
+    margin: 5px;
+}
+
+.planos {
+    display: flex;
+    background-color: #962121;
+    width: 100%;
+    height: 190px;
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.planos h1 {
+    font-size: 56px;
+}
+
+.planos h3 {
+    font-size: 2.4rem;
+    color: #EEEE22;
+}
+
+/*div preços */
+
+.containerpreco {
+    background-color: #000000;
+    height: 595px;
+    width: 100%;
+    display: flex;
+
+
+}
+
+.preco {
+    text-align: center;
+    margin-left: 70px;
+}
+
+.preco img {
+    height: 250px;
+}
+
+.preco h1 {
+    color: #EDED22;
+    font-size: 4.5rem;
+}
+
+.preco h3 {
+    color: #818100;
+    font-size: 1.7rem;
+}
+
+.preco p {
+    font-size: 1.7rem;
+    color: #ADADAD;
+}
+
+.paragrafo2 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+/* botao preço*/
+
+.botao2 {
+    font-size: 1.5rem;
+    background-color: #000000;
+    color: #EDED22;
+    height: 41px;
+    width: 193px;
+    border-color: #EDED22;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*div dicas*/
+
+.wpp {
+    background-color: #000000;
+    color: #D8D8D8;
+    text-align: center;
+    padding-bottom: 1.0rem;
+}
+
+.wpp p {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+/*Div APP*/
+
+.containerapp {
+    background-color: #ECECEC;
+    display: flex;
+
+}
+
+.app {
+    height: 631px;
+    width: 323px;
+    margin-top: 90px;
+    margin-left: 90px;
+
+
+
+}
+
+.app h1 {
+    font-size: 4.5rem;
+    margin-bottom: 35px;
+
+
+}
+
+.p1 {
+    font-size: 1.7rem;
+    color: #6873DD;
+}
+
+.p2 {
+    font-size: 1.7rem;
+    color: #808080;
+}
+
+.app h1 {
+    color: #6873DD;
+}
+
+/* div img*/
+
+.divimg {
+    float: right;
+}
+
+.divimg img {
+    height: 577px;
+
+}
+
+/*botao android*/
+
+.android {
+    font-size: 1.4rem;
+    background-color: #71B16C;
+    height: 48px;
+    width: 118px;
+    border-color: #59A453;
+    border-radius: 10px;
+    color: #F7F7F7;
+    border-style: none;
+    cursor: pointer;
+}
+
+.ios {
+    font-size: 1.4rem;
+    background-color: #2C8CBB;
+    width: 132px;
+    height: 48px;
+    border-color: #0074AD;
+    border-radius: 10px;
+    color: #F7F7F7;
+    cursor: pointer;
+    border-style: none;
+}
+
+/*dicas e dúvidas*/
+
+.dicas {
+
+    background-color: #E3A51A;
+    text-align: center;
+    margin: 0px;
+    height: 144px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.dicas h1 {
+    font-size: 3.6rem;
+    color: #FFFFFE;
+}
+
+.dicas h2 {
+    margin-top: 0px;
+    font-size: 2.0rem;
+    color: #FCF6E9;
+
+    font-weight: inherit;
+}
+
+
+
+.img-fluid d-block {
+    width: 1050px;
+    height: 250px;
+}
+
+.carousel-item active {
+    height: 1550px;
+}
+
+
+/* PERGUNTAS ( Accordion)*/
+.containerperguntas {
+    height: 580px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-color: #F1CA13;
+}
+
+.accordion h5 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.accordion {
+
+
+    height: 50px;
+    width: 1139px;
+    background-color: #F9F9F9;
+    color: #444;
+    cursor: pointer;
+    padding: 1.8rem;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    font-size: 2.5rem;
+    padding: 0 1.8rem;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+
+/* footer */
+
+.footer1 {
+    max-height: 897px;
+    display: flex;
+    background-color: #111672;
+    color: ivory;
+
+}
+
+.missao {
+
+    margin-top: 92px;
+    width: 585px;
+    margin-left: 50px;
+
+}
+
+.missao p {
+
+    font-size: 1.7rem;
+}
+
+.missao h1 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+
+}
+
+.horario {
+    margin-top: 98px;
+    margin-left: 70px;
+    margin-right: 43px;
+}
+
+.horario h1 {
+    font-size: 2.5rem;
+}
+
+.horario h2 {
+    font-size: 1.8rem;
+}
+
+.horario a {
+    color: #6773DD;
+    font-size: 2.5rem;
+    font-weight: 500;
+
+
+}
+
+.horario p {
+    font-size: 1.8rem;
+}
+
+.siga {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo1 {
+
+    margin-top: 9.8rem;
+
+}
+
+.siga p {
+
+    font-size: 2rem;
+}
+
+.call {
+    margin-top: 3.0rem;
+
+}
+
+.siga h1 {
+
+    font-size: 2.5rem;
+
+}
+
+.siga h2 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #E7F206;
+}
+
+.num {
+    color: #81DA9E;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.link {
+    margin: 5px;
+    color: #A1A3C7;
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.fab {
+    color: #DD9935;
+    font-size: 2.5rem;
+    margin: 5px;
+}
+
+.icone {
+
+    display: flex;
+}
+
+
+/*div copy*/
+
+
+.copy {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: #D6D3D6;
+    text-align: center;
+    background-color: #000000;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
