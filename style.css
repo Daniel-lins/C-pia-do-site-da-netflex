@@ -12,6 +12,11 @@
 
 }
 
+a {
+    text-decoration-line: none i !important;
+}
+
+
 
 
 body {
@@ -22,7 +27,8 @@ body {
 .nav1 {
     background-color: #6773DD;
     width: 100%;
-    height: 60px;
+    min-height: 60px;
+    max-height: auto;
 
 }
 
@@ -57,7 +63,8 @@ body {
 .menu {
     background-color: #111672;
     width: 100%;
-    height: 100px;
+    min-height: 100px;
+    max-height: auto;
     text-decoration: none;
 
 }
@@ -106,7 +113,8 @@ body {
 
 .vindo {
     background-color: #1E73BE;
-    height: 144px;
+    min-height: 144px;
+    max-height: auto;
     width: 100%;
     color: #FEFEFF;
     text-align: center;
@@ -142,7 +150,7 @@ body {
     background-color: #DBDBDB;
     width: 100%;
     min-height: 551px;
-    max-height: 1501px;
+    max-height: auto;
     display: flex;
     text-align: center;
     align-items: center;
@@ -195,11 +203,6 @@ body {
 
 }
 
-.teste h2,
-p {
-
-    margin-top: 50px;
-}
 
 .teste p {
 
@@ -209,7 +212,7 @@ p {
 .teste:hover {
 
     background-color: #8DDDA7;
-    transform: scale(1.07);
+    transform: scale(1.02);
     transition: all ease 0.3s;
     color: #FDFEFE;
 }
@@ -224,7 +227,6 @@ p {
     width: 147.89px;
     border-radius: 30px;
     border: none;
-
     cursor: pointer;
     font-size: 1.4rem;
 
@@ -241,7 +243,8 @@ p {
     display: flex;
     background-color: #962121;
     width: 100%;
-    height: 190px;
+    min-height: 190px;
+    max-height: auto;
     color: #FFFFFF;
     text-align: center;
     justify-content: center;
@@ -263,20 +266,28 @@ p {
 
 .containerpreco {
     background-color: #000000;
-    height: 595px;
+    min-height: 595px;
+    max-height: auto;
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 
 
 }
 
 .preco {
+
     text-align: center;
     margin-left: 70px;
+    max-height: 450px;
+    width: auto;
 }
 
 .preco img {
-    height: 250px;
+    max-height: 250px;
+    min-height: auto;
+
 }
 
 .preco h1 {
@@ -335,7 +346,8 @@ p {
 }
 
 .app {
-    height: 631px;
+    min-height: 485px;
+    max-height: auto;
     width: 323px;
     margin-top: 90px;
     margin-left: 90px;
@@ -372,22 +384,34 @@ p {
 }
 
 .divimg img {
-    height: 577px;
+    max-width: 100%;
+    height: auto;
 
 }
 
 /*botao android*/
 
-.android {
+.butao {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.butao {
     font-size: 1.4rem;
-    background-color: #71B16C;
     height: 48px;
-    width: 118px;
-    border-color: #59A453;
-    border-radius: 10px;
-    color: #F7F7F7;
     border-style: none;
+    border-radius: 10px;
     cursor: pointer;
+    color: #F7F7F7;
+}
+
+.android {
+    background-color: #71B16C;
+    border-color: #59A453;
+    color: #F7F7F7;
+    width: 118px;
+
 }
 
 .ios {
@@ -396,10 +420,7 @@ p {
     width: 132px;
     height: 48px;
     border-color: #0074AD;
-    border-radius: 10px;
-    color: #F7F7F7;
-    cursor: pointer;
-    border-style: none;
+
 }
 
 /*dicas e dúvidas*/
@@ -409,7 +430,8 @@ p {
     background-color: #E3A51A;
     text-align: center;
     margin: 0px;
-    height: 144px;
+    min-height: 144px;
+    max-height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -444,7 +466,8 @@ p {
 
 /* PERGUNTAS ( Accordion)*/
 .containerperguntas {
-    height: 580px;
+    min-height: 580px;
+    max-height: auto;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -460,7 +483,8 @@ p {
 .accordion {
 
 
-    height: 50px;
+    min-height: 50px;
+    max-height: auto;
     width: 1139px;
     background-color: #F9F9F9;
     color: #444;
@@ -487,7 +511,8 @@ p {
 /* footer */
 
 .footer1 {
-    max-height: 897px;
+    min-height: 897px;
+    max-height: auto;
     display: flex;
     background-color: #111672;
     color: ivory;
@@ -497,7 +522,8 @@ p {
 .missao {
 
     margin-top: 92px;
-    width: 585px;
+    max-width: 585px;
+    min-height: auto;
     margin-left: 50px;
 
 }
@@ -608,7 +634,8 @@ p {
     color: #D6D3D6;
     text-align: center;
     background-color: #000000;
-    height: 70px;
+    min-height: 70px;
+    max-height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -616,6 +643,11 @@ p {
 }
 
 @media (max-width: 767px) {
+
+    .html {
+        font-size: 50%;
+    }
+
     .principal {
         display: flex;
         flex-direction: column;
@@ -625,8 +657,29 @@ p {
     .containerapp {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
 
 
+    .containerpreco {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .divimg img {
+        height: 377px;
+
+    }
 }
