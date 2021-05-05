@@ -60,20 +60,39 @@ body {
 
 
 /*segundo menu*/
+
+.checkbtn {
+    font-size: 0px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.checkbtn i {
+    font-size: 20px;
+}
+
+#check {
+    display: none;
+}
+
 .menu {
     background-color: #111672;
     width: 100%;
     min-height: 100px;
     max-height: auto;
     text-decoration: none;
-
 }
 
 .menu ul {
     text-decoration: none;
     list-style: none;
     justify-content: center;
-    display: flex;
+
 
 }
 
@@ -92,7 +111,8 @@ body {
     align-items: center;
     margin-top: 40px;
     position: relative;
-    left: 320px;
+    left: 420px;
+    display: inline-block;
 
 
 
@@ -150,7 +170,7 @@ body {
 .principal {
     background-color: #DBDBDB;
     width: 100%;
-    min-height: 551px;
+    min-height: 591px;
     max-height: auto;
     display: flex;
     text-align: center;
@@ -161,10 +181,16 @@ body {
 
 }
 
-.fas {
+.teste i {
     transform: translatey(-50%);
     border-radius: 50%;
     border: 15px solid #81db9e;
+
+}
+
+.fas fa-check-circle :hover {
+    background-color: #6D83E8;
+
 }
 
 .fa-user {
@@ -266,22 +292,26 @@ body {
 /*div preços */
 
 .containerpreco {
-    background-color: #000000;
-    min-height: 595px;
-    max-height: auto;
-    width: 100%;
+
     display: flex;
+    flex-wrap: wrap;
+    background-color: #000000;
     align-items: center;
     justify-content: center;
+    min-height: 725px;
+    max-height: auto;
+    width: 100%;
+
 
 
 }
 
 .preco {
-
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin-left: 70px;
-    max-height: 450px;
+    justify-content: center;
+    margin-left: 50px;
     width: auto;
 }
 
@@ -317,11 +347,16 @@ body {
     font-size: 1.5rem;
     background-color: #000000;
     color: #EDED22;
-    height: 41px;
-    width: 193px;
+    padding: 10px 10px;
+    width: 19.3rem;
+    margin-left: 20px;
     border-color: #EDED22;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.botao2 :hover {
+    background-color: #6773DD;
 }
 
 /*div dicas*/
@@ -330,12 +365,20 @@ body {
     background-color: #000000;
     color: #D8D8D8;
     text-align: center;
+    padding-top: 1.0rem;
     padding-bottom: 1.0rem;
+    min-height: 100px;
+    max-height: auto;
+
 }
 
 .wpp p {
     font-size: 1.4rem;
     margin-bottom: 15px;
+}
+
+.wpp h1 {
+    font-size: 3.6rem;
 }
 
 /*Div APP*/
@@ -566,6 +609,11 @@ body {
     font-size: 1.8rem;
 }
 
+.horario a {
+    color: #6773DD;
+
+}
+
 .siga {
 
     display: flex;
@@ -647,6 +695,70 @@ body {
     .menu a {
         left: 340px;
         font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        display: none;
+    }
+
+    #check:checked~ul {
+        display: block;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+
+    containerlogo {
+        z-index: 11;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    ul {
+        display: flex;
+        flex-direction: columns;
+        width: 100%;
+        height: 100vh;
+        background: #111672;
+        top: 80px;
+
+        text-align: center;
+        transition: all .5s;
+        z-index: 10;
+    }
+
+    menu ul li {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    menu ul li a {
+
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #5434af;
+    }
+
+    #check:checked~ul {
+        left: 0;
     }
 }
 
