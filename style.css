@@ -132,6 +132,10 @@ body {
 
 /*barra bem vindo*/
 
+.carousel {
+    height:100%;
+}
+
 .vindo {
     background-color: #1E73BE;
     min-height: 144px;
@@ -260,6 +264,11 @@ body {
 
 }
 
+.botao:hover {
+    background-color: #637ED6;
+    transition: all ease 0.3s;
+}
+
 /*plano fibra*/
 .planos h1,
 .planos h3 {
@@ -355,8 +364,9 @@ body {
     cursor: pointer;
 }
 
-.botao2 :hover {
+.botao2:hover {
     background-color: #6773DD;
+    transition: all ease 0.5s;
 }
 
 /*div dicas*/
@@ -451,20 +461,36 @@ body {
 }
 
 .android {
-    background-color: #71B16C;
+    background-color: #80BC7B;
     border-color: #59A453;
     color: #F7F7F7;
     width: 118px;
 
 }
 
+.android:hover {
+    background-color: #72B26D;
+    transition: all ease 0.5s;
+}
+
+
 .ios {
     font-size: 1.4rem;
-    background-color: #2C8CBB;
+    background-color: #0B8DCD;
     width: 132px;
     height: 48px;
     border-color: #0074AD;
 
+
+}
+
+.fab {
+    color: #FFFFFE !important;
+}
+
+.ios:hover {
+    background-color: #288ABA;
+    transition: all ease 0.5s;
 }
 
 /*dicas e dúvidas*/
@@ -512,11 +538,18 @@ body {
 .containerperguntas {
     min-height: 580px;
     max-height: auto;
+    width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     display: flex;
     background-color: #F1CA13;
+    padding: 20px;
+}
+
+.perguntas {
+    width: 80%;
+    height: auto;
 }
 
 .accordion h5 {
@@ -525,19 +558,12 @@ body {
 }
 
 .accordion {
-
-
-    min-height: 50px;
-    max-height: auto;
-    width: 1139px;
     background-color: #F9F9F9;
     color: #444;
     cursor: pointer;
     padding: 1.8rem;
     text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+    transition: 0.8s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -547,8 +573,10 @@ body {
     font-size: 2.5rem;
     padding: 0 1.8rem;
     background-color: white;
+    height: auto;
     display: none;
     overflow: hidden;
+    width: 100%;
 }
 
 
@@ -678,7 +706,7 @@ body {
 
 
 .copy {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     color: #D6D3D6;
     text-align: center;
@@ -701,6 +729,12 @@ body {
 @media (max-width: 858px) {
     .checkbtn {
         display: block;
+        width: 100%;
+
+    }
+
+    .fas {
+        float: right;
     }
 
     ul {
@@ -708,58 +742,54 @@ body {
     }
 
     #check:checked~ul {
-        display: block;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-    .checkbtn {
-        display: block;
+
     }
 
 
     containerlogo {
         z-index: 11;
     }
+}
 
-    .menu {
-        display: flex;
-        flex-direction: column;
+/*
+ul 
+    display: flex;
+    flex-direction: columns;
+    width: 100%;
+    height: 100vh;
+    background: #111672;
+    top: 80px;
 
-    }
+    text-align: center;
+    transition: all .5s;
+    z-index: 10;*/
 
-    ul {
-        display: flex;
-        flex-direction: columns;
-        width: 100%;
-        height: 100vh;
-        background: #111672;
-        top: 80px;
 
-        text-align: center;
-        transition: all .5s;
-        z-index: 10;
-    }
 
-    menu ul li {
-        display: flex;
-        flex-direction: column;
-        margin: 50px 0;
-        line-height: 30px;
-    }
+menu ul li {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+}
 
-    menu ul li a {
+menu ul li a {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
 
-        font-size: 20px;
-    }
+a.active {
+    background: none;
+    color: #5434af;
+}
 
-    a:hover,
-    a.active {
-        background: none;
-        color: #5434af;
-    }
-
-    #check:checked~ul {
-        left: 0;
-    }
+#check:checked~ul {
+    left: 0;
 }
 
 @media (max-width: 767px) {
@@ -800,6 +830,18 @@ body {
 
     .divimg img {
         height: 377px;
+
+    }
+}
+
+@media (max-width: 525px) {
+
+    #check:checked~ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
 
     }
 }
