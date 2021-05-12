@@ -133,7 +133,7 @@ body {
 /*barra bem vindo*/
 
 .carousel {
-    height:100%;
+    height: 100%;
 }
 
 .vindo {
@@ -177,6 +177,7 @@ body {
     min-height: 591px;
     max-height: auto;
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     align-items: center;
 
@@ -717,6 +718,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.copy a {
+    font-size: 1.4rem;
+    columns: #60D3A0;
 }
 
 @media (max-width: 1075px) {
