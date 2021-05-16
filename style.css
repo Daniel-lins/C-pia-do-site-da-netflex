@@ -16,9 +16,6 @@ a {
     text-decoration-line: none !important;
 }
 
-
-
-
 body {
     font-family: 'Nunito', sans-serif;
 }
@@ -87,6 +84,7 @@ body {
     max-height: auto;
     text-decoration: none;
 }
+
 
 .menu ul {
     text-decoration: none;
@@ -181,27 +179,30 @@ body {
     text-align: center;
     align-items: center;
 
-
-
-
 }
 
 .teste i {
-    transform: translatey(-50%);
     border-radius: 50%;
     border: 15px solid #81db9e;
+    background-color: #6D83E8;
 
 }
 
+
+
 .fas fa-check-circle :hover {
     background-color: #6D83E8;
+    color: #FEFEFF;
 
+}
+
+.fa-check-circle {
+    color: #6D83E8;
 }
 
 .fa-user {
     color: #FEFEFF;
     background-color: #6D83E8;
-
 }
 
 .fa-wifi {
@@ -842,12 +843,6 @@ a.active {
 
 @media (max-width: 525px) {
 
-    #check:checked~ul {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap-reverse;
-        align-items: center;
-        justify-content: center;
 
-    }
+    #check:checked~ul {}
 }
