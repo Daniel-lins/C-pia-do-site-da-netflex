@@ -535,9 +535,32 @@ body {
     height: 1550px;
 }
 
-
 /* PERGUNTAS ( Accordion)*/
-.containerperguntas {
+
+
+.js-accordion dt {
+    color: #333333;
+    font-weight: 400;
+}
+
+.js-accordion dd strong {
+    font-size: 1.7rem;
+    color: #82889D;
+}
+
+.js-accordion dd {
+    display: none;
+
+
+
+}
+
+.js-accordion dd.ativo {
+    display: block;
+    animation: slidedown .1s forwards;
+}
+
+.containerAcorrdion {
     min-height: 580px;
     max-height: auto;
     width: 100%;
@@ -549,37 +572,47 @@ body {
     padding: 20px;
 }
 
+
+.containerAcorrdion dt {
+    font-size: 1.8rem;
+}
+
+.containerAcorrdion dd {
+    font-size: 1.6rem;
+}
+
 .perguntas {
+    cursor: pointer;
     width: 80%;
     height: auto;
-}
-
-.accordion h5 {
-    font-size: 1.8rem;
-    font-weight: 400;
-}
-
-.accordion {
     background-color: #F9F9F9;
-    color: #444;
-    cursor: pointer;
-    padding: 1.8rem;
-    text-align: left;
-    transition: 0.8s;
+    padding: 20px;
+
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-    font-size: 2.5rem;
-    padding: 0 1.8rem;
-    background-color: white;
-    height: auto;
-    display: none;
-    overflow: hidden;
-    width: 100%;
+.js-accordion dt::before {
+    content: '🞧';
+    margin-right: 5px;
 }
+
+.js-accordion dt.ativo::before {
+    content: '−';
+    margin-right: 5px;
+}
+
+@keyframes slidedown {
+    from {
+        opacity: 0;
+        max-height: 0;
+
+    }
+
+    to {
+        max-height: 200px;
+        opacity: 1;
+    }
+}
+
 
 
 /* footer */
@@ -843,6 +876,18 @@ a.active {
 
 @media (max-width: 525px) {
 
+    .logo {
+        position: relative;
+    }
 
-    #check:checked~ul {}
+    #check:checked~.logo {
+        margin-bottom: px;
+    }
+
+    #check:checked~ul a {
+        margin-right: 750px;
+
+
+
+    }
 }
